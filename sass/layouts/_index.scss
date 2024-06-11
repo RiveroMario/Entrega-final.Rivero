@@ -6,7 +6,7 @@
 }
 
 body { 
-    background-image: url(../../imagenes/fondo.jpg);
+    background-image:url("../../imagenes/fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -62,19 +62,19 @@ a {
     font-family: monospace;
     color: #bfbfbf;
     text-decoration: none;
-    text-shadow: goldenrod;
+    text-shadow: var($color-golden);
 
 }
 
 a :hover{
-    color: goldenrod;
+    color: var($color-golden);
 }
 
 /* fin de general */
 
 /* header */
 header { 
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color:var(#050617);
     width: 100%;
     height: 30%;
 }
@@ -89,11 +89,11 @@ main {
 
 .contenedorTabla {
     margin: 25px 0px;
-    background-color: rgba(245, 245, 220, 0);
+    background-color: var(#050617);
 }
 
 .tabla {
-    background-color: rgba(0, 0, 0, 0.941);
+    background-color: var(#050617);
     text-align: center;
     border-radius: 10px;
     border: 3px solid #0E34A0;
@@ -102,7 +102,7 @@ main {
 
 .tabla:hover {
     border: 5px solid goldenrod;
-    box-shadow: 20px 20px 20px goldenrod;
+    box-shadow: 20px 20px 20px var($color-golden);
 }
 
 .tabla td {
@@ -112,7 +112,7 @@ main {
 
 /* Section */
 section {
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: var(#050617);
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -135,7 +135,7 @@ section article img {
 }
 
 .articulo {
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: var(#050617);
     height: auto;
 }
 
@@ -144,7 +144,7 @@ section article img {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: var($color-negro);
     padding: 30px;
     line-height: 30px;
 }
@@ -168,7 +168,7 @@ h3 {
 }
 
 footer p {
-    color: gold;
+    color: var($color-golden);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
     text-align: center;
