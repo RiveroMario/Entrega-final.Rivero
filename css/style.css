@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url(../../imagenes/fondo.jpg);
+  background-image: url("../../imagenes/fondo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -25,29 +25,6 @@ body {
   margin-top: 75px;
 }
 
-/*secion para corregir q no funciona, averiguar el por q no funciona*/
-/*
-.nav ul li {
-    position: relative;
-    display: inline-block;
-    margin: 0 15px;
-}
-
-.nav ul li::after {
-    content: "";
-    height: 3px;
-    width: 0;
-    background-color: goldenrod;
-    position: absolute;
-    left: 0;
-    bottom: -5px; 
-    transition: width 0.5s ease; 
-}
-
-.nav ul li:hover::after {
-    width: 100%;
-}
-*/
 .reyes {
   font-style: italic;
   font-family: monospace;
@@ -61,17 +38,16 @@ a {
   font-family: monospace;
   color: #bfbfbf;
   text-decoration: none;
-  text-shadow: goldenrod;
+  text-shadow: rgb(222, 169, 34);
 }
-
-a :hover {
-  color: goldenrod;
+a:hover {
+  color: rgb(222, 169, 34);
 }
 
 /* fin de general */
 /* header */
 header {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #050617;
   width: 100%;
   height: 30%;
 }
@@ -87,43 +63,39 @@ main {
 
 .contenedorTabla {
   margin: 25px 0px;
-  background-color: rgba(245, 245, 220, 0);
+  background-color: rgba(1, 6, 24, 0.1176470588);
 }
 
 .tabla {
-  background-color: rgba(0, 0, 0, 0.941);
+  background-color: #050617;
   text-align: center;
   border-radius: 10px;
   border: 3px solid #0E34A0;
   transition: 0.25s;
 }
-
-.tabla:hover {
-  border: 5px solid goldenrod;
-  box-shadow: 20px 20px 20px goldenrod;
-}
-
 .tabla td {
   padding: 5px;
-  color: #0E34A0;
+  color: #9fa2a8;
+}
+.tabla:hover {
+  border: 5px solid goldenrod;
+  box-shadow: 20px 20px 20px rgb(222, 169, 34);
 }
 
 /* Section */
 section {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(#050617);
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
 }
-
 section article {
   width: 30%;
   margin: 20px 0;
   text-align: center;
 }
-
 section article img {
   width: 100%;
   height: auto;
@@ -132,23 +104,23 @@ section article img {
 }
 
 .articulo {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(#050617);
   height: auto;
 }
 
 .parrafo {
-  color: rgb(159, 187, 201);
+  color: rgb(229, 229, 229);
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(1, 6, 24, 0.5725490196);
   padding: 30px;
   line-height: 30px;
 }
 
 h3 {
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
   margin-top: 30px;
 }
 
@@ -164,12 +136,18 @@ h3 {
 }
 
 footer p {
-  color: gold;
+  color: var(rgb(222, 169, 34));
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 15px;
   text-align: center;
 }
 
 /* Fin footer */
+@media screen and (max-width: 480px) {
+  .parrafo {
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
